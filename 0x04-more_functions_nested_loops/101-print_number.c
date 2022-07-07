@@ -4,7 +4,7 @@
 * @n: the number you want to print using putchar
 * Return: 0.
 */
-void print_number(int n)  
+void print_number(int n)
 {
 int  temp, temp2, cnt, div, result, i;
 cnt = 0;
