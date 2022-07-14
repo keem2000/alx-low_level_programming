@@ -4,15 +4,14 @@
 * @str: string
 * Return: returns char
 */
-char *string_toupper(char *str)
+char *string_toupper(char *s)
 {
-int i;
-for (i = 0; str[i] != '\0'; i++)
+char *str = s;
+while (*s)
 {
-if (str[i] >= 'a' && str[i] <= 'z')
-}
-str[i] = str[i] - 32;
-}
+if (*s >= 97 && *s <= 122)
+*s -= 32;
+s++;
 }
 return (str);
 }
