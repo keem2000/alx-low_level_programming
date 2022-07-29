@@ -36,5 +36,5 @@ for (; i < (size1 + n); i++)
 p[i] = s2[i - size1];
 }
 p[i] = '\0';
-return (p); 
+return (p);
 }
