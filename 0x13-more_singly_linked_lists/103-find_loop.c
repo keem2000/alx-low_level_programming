@@ -27,7 +27,7 @@ while (p2->next != head && p2->next != prev)
 p2 = p2->next;
 }
 if (p2->next == head)
-break;		
+break;
 head = head->next;
 }
 return (p2->next);
