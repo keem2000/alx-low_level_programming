@@ -28,5 +28,5 @@ return (0);
 }
 free(buffer);
 close(o);
-return (w); 
+return (w);
 }
