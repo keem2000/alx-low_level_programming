@@ -28,5 +28,5 @@ else
 *head = new;
 }
 new->prev = h;
-return (new); 
+return (new);
 }

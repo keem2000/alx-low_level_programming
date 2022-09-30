@@ -23,7 +23,7 @@ vch += 1;
 }
 srand(ch ^ 14);
 rand_num = rand();
-return (rand_num & 63); 
+return (rand_num & 63);
 }
 /**
  * f5 - multiplies each char of username
@@ -42,7 +42,7 @@ while (vch < len)
 ch = ch + usrn[vch] * usrn[vch];
 vch += 1;
 }
-return (((unsigned int)ch ^ 239) & 63); 
+return (((unsigned int)ch ^ 239) & 63);
 }
 /**
  * f6 - generates a random char
@@ -50,7 +50,7 @@ return (((unsigned int)ch ^ 239) & 63);
  * @usrn: username
  * Return: a random char
  */
-int f6(char *usrn) 
+int f6(char *usrn)
 {
 int ch;
 int vch;
@@ -60,7 +60,7 @@ while (vch < *usrn)
 ch = rand();
 vch += 1;
 }
-return (((unsigned int)ch ^ 229) & 63); 
+return (((unsigned int)ch ^ 229) & 63);
 }
 /**
  * main - Entry point
@@ -79,7 +79,7 @@ long alph[] = {
 0x723161513346655a, 0x6b756f494b646850 };
 (void) argc;
 for (len = 0; argv[1][len]; len++)
-;  
+;
 /* ----------- f1 ----------- */
 keygen[0] = ((char *)alph)[(len ^ 59) & 63];
 /* ----------- f2 ----------- */
@@ -108,5 +108,5 @@ keygen[5] = ((char *)alph)[f6(argv[1])];
 keygen[6] = '\0';
 for (ch = 0; keygen[ch]; ch++)
 printf("%c", keygen[ch]);
-return (0); 
+return (0);
 }

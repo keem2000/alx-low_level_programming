@@ -22,5 +22,5 @@ break;
 head = head->next;
 i++;
 }
-return (head); 
+return (head);
 }
